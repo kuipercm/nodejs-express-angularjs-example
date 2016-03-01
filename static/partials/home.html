@@ -1,0 +1,19 @@
+<div>
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>{{ctrl.helloWorld}}</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Over Cavero</h3>
+            {{ctrl.over_cavero}}
+        </div>
+        <div class="col-md-4">
+            <h3>Actualiteiten</h3>
+            <div data-ng-repeat="actualiteit in ctrl.actualiteiten">
+                <h4>{{actualiteit.title}}</h4>
+                {{actualiteit.timestamp}}
+            </div>
+        </div>
+    </div>
+</div>

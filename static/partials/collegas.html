@@ -1,0 +1,17 @@
+<div>
+    <h2>Over ons</h2>
+    <table class="table table-striped">
+        <tr>
+            <th></th>
+            <th>Naam</th>
+            <th>E-mail</th>
+            <th>Discipline</th>
+        </tr>
+        <tr data-ng-repeat="collega in ctrl.collegas">
+            <td><img data-ng-src="{{collega.photo}}" class="img-circle img-thumbnail collega"></td>
+            <td>{{collega.name}}</td>
+            <td>{{collega.email}}</td>
+            <td><img data-ng-src="{{collega.categoryImg}}" width="50px"></td>
+        </tr>
+    </table>
+</div>
